@@ -1,0 +1,607 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+    box-sizing: border-box !important;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Utilities */
+
+/* font-weight */
+.fw-light{
+    font-weight: 300 !important;
+}
+
+.fw-bold{
+    font-weight: 700 !important;
+}
+
+.fw-semibold{
+    font-weight: 600 !important;
+}
+
+/* text-color */
+.text-red{
+    color: #F40928 !important;
+}
+
+.text-light{
+    color: #ffffff !important;
+}
+
+.text-dark{
+    color: #112138 !important;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.text-start{
+    text-align: left !important;
+}
+
+.text-end{
+    text-align: right !important;
+}
+
+.text-justify{
+    text-align: justify !important;
+}
+/* bg-color */
+
+.bg-red{
+    background-color: #F40928 !important;
+}
+
+.bg-light{
+    background-color: #ffffff !important;
+}
+
+.bg-dark{
+    background-color: #112138 !important;
+}
+
+/* text-decoration */
+.text-decoration-none{
+    text-decoration: none !important;
+}
+/* karakteristik */
+.block{
+    display: block !important;
+}
+.inline-block{
+    display: inline-block !important;
+}
+.inline{
+    display: inline !important;
+}
+/* sizing */
+.w-full{
+    width: 100% !important;
+}
+.w-1\/2{
+    width: 50% !important;
+}
+
+/* spacing */
+/* padding */
+.p-10{
+    padding: 10px !important;
+}
+
+.pl-10{
+    padding-left: 10px !important;
+}
+
+.pr-10{
+    padding-right: 10px !important;
+}
+
+.pt-10{
+    padding-top: 10px !important;
+}
+
+.pb-10{
+    padding-bottom: 10px !important;
+}
+
+.p-20{
+    padding: 20px !important;
+}
+
+.pl-20{
+    padding-left: 20px !important;
+}
+
+.pr-20{
+    padding-right: 20px !important;
+}
+
+.pt-20{
+    padding-top: 20px !important;
+}
+
+.pb-20{
+    padding-bottom: 20px !important;
+}
+.p-30{
+    padding: 30px !important;
+}
+
+.pl-30{
+    padding-left: 30px !important;
+}
+
+.pr-30{
+    padding-right: 30px !important;
+}
+
+.pt-30{
+    padding-top: 30px !important;
+}
+
+.pb-30{
+    padding-bottom: 30px !important;
+}
+
+/* margin */
+.m-10{
+    margin: 10px !important;
+}
+
+.ml-10{
+    margin-left: 10px !important;
+}
+
+.mr-10{
+    margin-right: 10px !important;
+}
+
+.mt-10{
+    margin-top: 10px !important;
+}
+
+.mb-10{
+    margin-bottom: 10px !important;
+}
+
+.m-20{
+    margin: 20px !important;
+}
+
+.ml-20{
+    margin-left: 20px !important;
+}
+
+.mr-20{
+    margin-right: 20px !important;
+}
+
+.mt-20{
+    margin-top: 20px !important;
+}
+
+.mb-20{
+    margin-bottom: 20px !important;
+}
+
+.m-30{
+    margin: 30px !important;
+}
+
+.ml-30{
+    margin-left: 30px !important;
+}
+
+.mr-30{
+    margin-right: 30px !important;
+}
+
+.mt-30{
+    margin-top: 30px !important;
+}
+
+.mb-30{
+    margin-bottom: 30px !important;
+}
+
+/* button */
+
+.btn{
+    box-sizing: border-box;
+    padding: 10px 15px;
+}
+.border{
+    border-width: 1px;
+    border-style: solid;
+}
+.border-2{
+    border-width: 2px;
+    border-style: solid;
+}
+.border-3{
+    border-width: 3px;
+    border-style: solid;
+}
+.border-red{
+    border-color: #F40928;
+}
+
+nav{
+    padding: 15px 139px;
+    color: #fff;
+    display: flex;
+    background-color: #112138;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    top: 0;
+    z-index: 9999;
+}
+
+.brand{
+    font-size: 24px;
+}
+
+.nav-item-desktop{
+    display: none;
+    font-size: 18px;
+}
+
+.nav-item-desktop ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 0.3rem;
+}
+
+.nav-item-desktop ul li:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-item-mobile{
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #112138;
+}
+.nav-item-mobile ul{
+    justify-content: space-around;
+    display: flex;
+}
+.nav-item-mobile ul li{
+    list-style: none;
+    padding: 10px 25px;
+    border-radius: 0.3rem;
+}
+
+.nav-item-mobile ul li:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header{
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.hero{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-title{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: 10px 2rem;
+    box-sizing: border-box !important;
+}
+
+.hero-cta{
+    box-sizing: border-box;
+}
+
+.hero-title h1{
+    font-size: 1.5rem;
+}
+
+.container{
+    padding: 0 20px;
+}
+
+.main{
+    min-height: 300px;
+}
+.services{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.service{
+    width: 100%;
+    padding: 2rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.service .icon{
+    display: flex;
+    align-items: center;
+}
+.service .icon i{
+    font-size: 1.5rem;
+}
+.service .service-title{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.product-title h2{
+    color: #000;
+    font-size: 1.8rem;
+}
+.product-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.product-item{
+    box-shadow: -2px 11px 17px 0px rgba(0,0,0,0.28);
+    -webkit-box-shadow: -2px 11px 17px 0px rgba(0,0,0,0.28);
+    -moz-box-shadow: -2px 11px 17px 0px rgba(0,0,0,0.28);
+    border-radius: 5px;
+}
+.product-image{
+    overflow: hidden;
+}
+.product-item .product-image img{
+    transition: 1s;
+}
+.product-item:hover .product-image img{
+    transform: scale(1.2);
+}
+
+.detail .title, .detail .price{
+    font-size: 18px;
+}
+footer{
+    padding: 20px 20px;
+    margin-bottom: 50px;
+}
+footer span{
+    font-size: 12px;
+}
+@media screen and (min-width: 576px) {
+    .btn{
+        box-sizing: border-box;
+        padding: 15px 30px;
+    }
+    nav{
+        padding: 15px 20px;
+        justify-content: space-between;
+    }
+    .nav-item-desktop{
+        display: block;
+    }
+    .nav-item-mobile{
+        display: none;
+    }
+    .nav-item-desktop ul li{
+        padding: 10px 15px;
+    }
+    header{
+        margin-top: 65px;
+    }
+    .hero-title{
+        margin: 20px 20px;
+    }
+    .container{
+        padding: 0 20px;
+    }
+    .container.body{
+        margin-top:-12rem
+    }
+    .services{
+        flex-wrap:nowrap;
+    }
+    .service{
+        padding: 1rem;
+    }
+    .service .icon i{
+        font-size: 1.5rem;
+    }
+    .service .service-title{
+        font-size: 0.7rem;
+    }
+    .product-list{
+        flex-wrap: nowrap;
+    }
+    .product-title h2{
+        color: #fff;
+        font-size: 1.8rem;
+    }
+    footer{
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    nav{
+        padding: 15px 20px;
+    }
+    .container{
+        padding: 0 20px;
+    }
+    .container.body{
+        margin-top:-12rem
+    }
+    .hero-title{
+        margin: 90px 20px;
+    }
+    .hero-title h1{
+        font-size: 2rem;
+    }
+    .service{
+        padding: 1rem;
+    }
+    .service .icon i{
+        font-size: 1.8rem;
+    }
+    .service .service-title{
+        font-size: 0.8rem;
+    }
+    .product-title h2{
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    nav{
+        padding: 15px 139px;
+    }
+    .container{
+        padding: 0 139px;
+    }
+    .container.body{
+        margin-top:-12rem
+    }
+    .hero-title{
+        margin: 100px 139px;
+    }
+    .service{
+        padding: 1rem;
+    }
+    .service .icon i{
+        font-size: 1.8rem;
+    }
+    .service .service-title{
+        font-size: 0.8rem;
+    }
+    .product-title h2{
+        font-size: 1.8rem;
+    }
+    .detail .title, .detail .price{
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container{
+        padding: 0 139px;
+    }
+    .container.body{
+        margin-top:-21rem
+    }
+    .hero-title{
+        margin: 120px 139px;
+    }
+    .hero-title h1{
+        font-size: 4rem;
+    }
+    .main{
+        height: 500px;
+    }
+    .service{
+        padding: 1.5rem;
+    }
+    .service .icon i{
+        font-size: 2.5rem;
+    }
+    .service .service-title{
+        font-size: 1.3rem;
+    }
+    .product-title h2{
+        font-size: 1.8rem;
+    }
+    footer{
+        padding: 20px 139px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .hero-title{
+        margin: 200px 139px;
+    }
+    .hero-title h1{
+        font-size: 5rem;
+    }
+    .container{
+        padding: 0 139px;
+    }
+    .container.body{
+        margin-top:-21rem
+    }
+    .service{
+        padding: 1.8rem;
+    }
+    .service .icon i{
+        font-size: 2.8rem;
+    }
+    .service .service-title{
+        font-size: 1.8rem;
+    }
+    .hero-cta{
+        font-size: 1.5rem;
+    }
+
+    .product-title h2{
+        font-size: 2rem;
+    }
+}
